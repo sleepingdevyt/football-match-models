@@ -1,0 +1,75 @@
+{
+    "LogisticRegression": {
+        "best_rps": 0.183542,
+        "best_params": {
+            "penalty": "elasticnet",
+            "C": 0.024351398756960182,
+            "l1_ratio": 0.41360515899399325
+        }
+    },
+    "ExtraTrees": {
+        "best_rps": 0.183017,
+        "best_params": {
+            "bootstrap": true,
+            "n_estimators": 975,
+            "max_depth": 15,
+            "min_samples_split": 25,
+            "min_samples_leaf": 6,
+            "max_features": 0.8,
+            "max_samples": 0.9316140297844117
+        }
+    },
+    "LightGBM": {
+        "best_rps": 0.183226,
+        "best_params": {
+            "n_estimators": 434,
+            "learning_rate": 0.0062732720562188055,
+            "num_leaves": 63,
+            "max_depth": 12,
+            "min_child_samples": 42,
+            "subsample": 0.8177180175366877,
+            "colsample_bytree": 0.8180592848684569,
+            "feature_fraction_bynode": 0.7683900459608057,
+            "reg_alpha": 3.2930963366651257e-07,
+            "reg_lambda": 2.4450419594568896e-08,
+            "min_split_gain": 6.505353607800362e-07,
+            "path_smooth": 5.100160327683401,
+            "max_bin": 439,
+            "extra_trees": true
+        }
+    },
+    "CatBoost": {
+        "best_rps": 0.183183,
+        "best_params": {
+            "iterations": 1064,
+            "depth": 5,
+            "learning_rate": 0.006280014077818713,
+            "l2_leaf_reg": 8.657039401617709,
+            "random_strength": 8.03671022493703,
+            "bagging_temperature": 1.3139613208134444,
+            "border_count": 157,
+            "leaf_estimation_iterations": 2,
+            "min_data_in_leaf": 34,
+            "grow_policy": "SymmetricTree"
+        }
+    },
+    "XGBoost": {
+        "best_rps": 0.183762,
+        "best_params": {
+            "n_estimators": 379,
+            "max_depth": 10,
+            "learning_rate": 0.032050147625190505,
+            "min_child_weight": 12,
+            "subsample": 0.701767285280445,
+            "colsample_bytree": 0.680473807867619,
+            "colsample_bylevel": 0.8718101095577664,
+            "colsample_bynode": 0.655754373091601,
+            "gamma": 3.8191371344357163,
+            "reg_alpha": 0.016937987294712128,
+            "reg_lambda": 9.089531319647513e-06,
+            "max_delta_step": 4,
+            "max_bin": 180,
+            "grow_policy": "lossguide"
+        }
+    }
+}

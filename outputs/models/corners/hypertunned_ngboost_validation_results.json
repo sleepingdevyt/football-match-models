@@ -1,0 +1,145 @@
+{
+    "target": "goals",
+    "components": [
+        "home_total_corners",
+        "away_total_corners"
+    ],
+    "thresholds": [
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5
+    ],
+    "total_method": "convolution",
+    "max_k": 15,
+    "saved_at": "2026-08-08T11:31:02",
+    "label": "NGBoost_Tuned_Poisson",
+    "stage": "feature_selection_subset",
+    "results": {
+        "summary": {
+            "label": "NGBoost | poisson",
+            "family": "poisson",
+            "total_method": "convolution",
+            "ece_global": 0.016395357186209863,
+            "rps_home": 1.5772432440746535,
+            "rps_home_std": 1.2647042527034487,
+            "rps_home_p95": 4.02847386252336,
+            "nll_home": 2.458885718455361,
+            "rps_away": 1.3862080332016191,
+            "rps_away_std": 1.1850957560532178,
+            "rps_away_p95": 3.6693903561532535,
+            "nll_away": 2.313117666360189,
+            "n_samples": 2248
+        },
+        "ece_by_threshold": [
+            {
+                "threshold": 1.5,
+                "p_pred_mean": 0.9992412980850423,
+                "p_real": 0.9915480427046264,
+                "abs_error": 0.007693255380415875,
+                "n_over": 2229
+            },
+            {
+                "threshold": 2.5,
+                "p_pred_mean": 0.9960140564983072,
+                "p_real": 0.9875444839857651,
+                "abs_error": 0.0084695725125421,
+                "n_over": 2220
+            },
+            {
+                "threshold": 3.5,
+                "p_pred_mean": 0.9858540874399704,
+                "p_real": 0.9737544483985765,
+                "abs_error": 0.012099639041393884,
+                "n_over": 2189
+            },
+            {
+                "threshold": 4.5,
+                "p_pred_mean": 0.9617886326389071,
+                "p_real": 0.9386120996441281,
+                "abs_error": 0.023176532994779064,
+                "n_over": 2110
+            },
+            {
+                "threshold": 5.5,
+                "p_pred_mean": 0.9160441726891284,
+                "p_real": 0.8856761565836299,
+                "abs_error": 0.030368016105498552,
+                "n_over": 1991
+            },
+            {
+                "threshold": 6.5,
+                "p_pred_mean": 0.8433615296226747,
+                "p_real": 0.8064946619217082,
+                "abs_error": 0.03686686770096659,
+                "n_over": 1813
+            },
+            {
+                "threshold": 7.5,
+                "p_pred_mean": 0.7440764034132245,
+                "p_real": 0.7148576512455516,
+                "abs_error": 0.02921875216767289,
+                "n_over": 1607
+            },
+            {
+                "threshold": 8.5,
+                "p_pred_mean": 0.6250521799324587,
+                "p_real": 0.6036476868327402,
+                "abs_error": 0.02140449309971848,
+                "n_over": 1357
+            },
+            {
+                "threshold": 9.5,
+                "p_pred_mean": 0.49784621229255765,
+                "p_real": 0.49777580071174377,
+                "abs_error": 7.041158081388943e-05,
+                "n_over": 1119
+            },
+            {
+                "threshold": 10.5,
+                "p_pred_mean": 0.37513576859444303,
+                "p_real": 0.38701067615658363,
+                "abs_error": 0.011874907562140602,
+                "n_over": 870
+            },
+            {
+                "threshold": 11.5,
+                "p_pred_mean": 0.2672137544929393,
+                "p_real": 0.26868327402135234,
+                "abs_error": 0.0014695195284130103,
+                "n_over": 604
+            },
+            {
+                "threshold": 12.5,
+                "p_pred_mean": 0.17995951152911088,
+                "p_real": 0.19306049822064056,
+                "abs_error": 0.013100986691529676,
+                "n_over": 434
+            },
+            {
+                "threshold": 13.5,
+                "p_pred_mean": 0.1146572277279579,
+                "p_real": 0.13167259786476868,
+                "abs_error": 0.017015370136810773,
+                "n_over": 296
+            },
+            {
+                "threshold": 14.5,
+                "p_pred_mean": 0.06914741642244772,
+                "p_real": 0.08585409252669039,
+                "abs_error": 0.016706676104242674,
+                "n_over": 193
+            }
+        ]
+    }
+}

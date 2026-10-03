@@ -1,0 +1,10 @@
+iterations: 1064
+depth: 5
+learning_rate: 0.006280014077818713
+l2_leaf_reg: 8.657039401617709
+random_strength: 8.03671022493703
+bagging_temperature: 1.3139613208134444
+border_count: 157
+leaf_estimation_iterations: 2
+min_data_in_leaf: 34
+grow_policy: SymmetricTree

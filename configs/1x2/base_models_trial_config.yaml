@@ -1,0 +1,46 @@
+LightGBM:
+  model_type: "LightGBM"
+  params:
+    random_state: 2026
+    n_estimators: 200
+    learning_rate: 0.01
+    max_depth: 7
+    num_leaves: 31
+    importance_type: "gain"
+    verbosity: -1
+  fit_params: {}
+
+XGBoost:
+  model_type: "XGBoost"
+  params:
+    random_state: 2026
+    n_estimators: 200
+    learning_rate: 0.01
+    max_depth: 7
+    objective: "multi:softprob"
+    eval_metric: "mlogloss"
+    tree_method: "hist"
+    verbosity: 0
+  fit_params: {}
+
+CatBoost:
+  model_type: "CatBoost"
+  params:
+    random_state: 2026
+    iterations: 200
+    learning_rate: 0.01
+    depth: 7
+    loss_function: "MultiClass"
+    verbose: 0
+  fit_params: {}
+
+ExtraTrees:
+  model_type: "ExtraTrees"
+  params:
+    random_state: 2026
+    n_estimators: 200
+    max_depth: 15
+    min_samples_split: 10
+    min_samples_leaf: 5
+    n_jobs: -1
+  fit_params: {}

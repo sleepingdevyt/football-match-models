@@ -1,0 +1,14 @@
+n_estimators: 379
+max_depth: 10
+learning_rate: 0.032050147625190505
+min_child_weight: 12
+subsample: 0.701767285280445
+colsample_bytree: 0.680473807867619
+colsample_bylevel: 0.8718101095577664
+colsample_bynode: 0.655754373091601
+gamma: 3.8191371344357163
+reg_alpha: 0.016937987294712128
+reg_lambda: 9.089531319647513e-06
+max_delta_step: 4
+max_bin: 180
+grow_policy: lossguide

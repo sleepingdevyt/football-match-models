@@ -1,0 +1,20 @@
+# data, models and backups never go into this repository
+data/
+*.parquet
+*.pkl
+*.csv
+*.dump
+*.sql.gz
+*.zip
+
+# environments and secrets
+.venv/
+*.venv
+.env
+*.env
+
+# caches
+__pycache__/
+*.pyc
+catboost_info/
+.ipynb_checkpoints/

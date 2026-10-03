@@ -1,0 +1,206 @@
+{
+    "target": "cards",
+    "components": [
+        "home_total_cards",
+        "away_total_cards"
+    ],
+    "thresholds": [
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5
+    ],
+    "total_method": "convolution",
+    "max_k": 7,
+    "saved_at": "2026-08-14T13:58:39",
+    "results": {
+        "summary": [
+            {
+                "component": "away",
+                "model": "NGBoost",
+                "family": "poisson",
+                "avg_fold_rps": 0.7739547633132835,
+                "avg_fold_nll": 1.7210230016129962,
+                "oof_rps": 0.7739547633132835,
+                "oof_nll": 1.7210230016129964,
+                "n_valid": 5875
+            },
+            {
+                "component": "away",
+                "model": "NGBoost",
+                "family": "negbin",
+                "avg_fold_rps": 0.7739619096115881,
+                "avg_fold_nll": 1.7219594715773745,
+                "oof_rps": 0.7739619096115881,
+                "oof_nll": 1.721959471577374,
+                "n_valid": 5875
+            },
+            {
+                "component": "away",
+                "model": "XGBoostLSS",
+                "family": "poisson",
+                "avg_fold_rps": 0.7755704458275898,
+                "avg_fold_nll": 1.723534958215063,
+                "oof_rps": 0.7755704458275897,
+                "oof_nll": 1.723534958215063,
+                "n_valid": 5875
+            },
+            {
+                "component": "away",
+                "model": "LightGBMLSS",
+                "family": "poisson",
+                "avg_fold_rps": 0.91531929486192,
+                "avg_fold_nll": 2.021099896812858,
+                "oof_rps": 0.91531929486192,
+                "oof_nll": 2.0210998968128577,
+                "n_valid": 5875
+            },
+            {
+                "component": "away",
+                "model": "XGBoostLSS",
+                "family": "negbin",
+                "avg_fold_rps": 2.1992593916930234,
+                "avg_fold_nll": 2.652704707681387,
+                "oof_rps": 2.199259391693024,
+                "oof_nll": 2.6527047076813877,
+                "n_valid": 5875
+            },
+            {
+                "component": "away",
+                "model": "LightGBMLSS",
+                "family": "negbin",
+                "avg_fold_rps": 2.5535036803806386,
+                "avg_fold_nll": 3.253695224174547,
+                "oof_rps": 2.5535036803806386,
+                "oof_nll": 3.2536952241745465,
+                "n_valid": 5875
+            },
+            {
+                "component": "home",
+                "model": "NGBoost",
+                "family": "negbin",
+                "avg_fold_rps": 0.7389938259641904,
+                "avg_fold_nll": 1.6639611868643271,
+                "oof_rps": 0.7389938259641905,
+                "oof_nll": 1.663961186864327,
+                "n_valid": 5875
+            },
+            {
+                "component": "home",
+                "model": "NGBoost",
+                "family": "poisson",
+                "avg_fold_rps": 0.739327743639846,
+                "avg_fold_nll": 1.6641777421023047,
+                "oof_rps": 0.739327743639846,
+                "oof_nll": 1.6641777421023047,
+                "n_valid": 5875
+            },
+            {
+                "component": "home",
+                "model": "LightGBMLSS",
+                "family": "poisson",
+                "avg_fold_rps": 0.7396252056236167,
+                "avg_fold_nll": 1.6643111783258142,
+                "oof_rps": 0.7396252056236167,
+                "oof_nll": 1.6643111783258142,
+                "n_valid": 5875
+            },
+            {
+                "component": "home",
+                "model": "XGBoostLSS",
+                "family": "poisson",
+                "avg_fold_rps": 0.7408652982149111,
+                "avg_fold_nll": 1.6668833326396046,
+                "oof_rps": 0.740865298214911,
+                "oof_nll": 1.666883332639605,
+                "n_valid": 5875
+            },
+            {
+                "component": "home",
+                "model": "XGBoostLSS",
+                "family": "negbin",
+                "avg_fold_rps": 1.7373460389342774,
+                "avg_fold_nll": 2.336129197499137,
+                "oof_rps": 1.7373460389342779,
+                "oof_nll": 2.336129197499137,
+                "n_valid": 5875
+            },
+            {
+                "component": "home",
+                "model": "LightGBMLSS",
+                "family": "negbin",
+                "avg_fold_rps": 1.9959917212438127,
+                "avg_fold_nll": 2.4641649217651436,
+                "oof_rps": 1.995991721243813,
+                "oof_nll": 2.464164921765143,
+                "n_valid": 5875
+            }
+        ],
+        "lr_tests": [
+            {
+                "component": "home",
+                "model": "LightGBMLSS",
+                "nll_poisson": 1.6643111783258142,
+                "nll_negbin": 2.464164921765143,
+                "lr_stat": -9398.281485412115,
+                "p_value": 0.5,
+                "significant": false,
+                "recommended_family": "poisson"
+            },
+            {
+                "component": "home",
+                "model": "XGBoostLSS",
+                "nll_poisson": 1.666883332639605,
+                "nll_negbin": 2.336129197499137,
+                "lr_stat": -7863.638912099502,
+                "p_value": 0.5,
+                "significant": false,
+                "recommended_family": "poisson"
+            },
+            {
+                "component": "home",
+                "model": "NGBoost",
+                "nll_poisson": 1.6641777421023047,
+                "nll_negbin": 1.663961186864327,
+                "lr_stat": 2.5445240462392826,
+                "p_value": 0.055338629226577674,
+                "significant": false,
+                "recommended_family": "poisson"
+            },
+            {
+                "component": "away",
+                "model": "LightGBMLSS",
+                "nll_poisson": 2.0210998968128577,
+                "nll_negbin": 3.2536952241745465,
+                "lr_stat": -14482.995096499842,
+                "p_value": 0.5,
+                "significant": false,
+                "recommended_family": "poisson"
+            },
+            {
+                "component": "away",
+                "model": "XGBoostLSS",
+                "nll_poisson": 1.723534958215063,
+                "nll_negbin": 2.6527047076813877,
+                "lr_stat": -10917.744556229316,
+                "p_value": 0.5,
+                "significant": false,
+                "recommended_family": "poisson"
+            },
+            {
+                "component": "away",
+                "model": "NGBoost",
+                "nll_poisson": 1.7210230016129964,
+                "nll_negbin": 1.721959471577374,
+                "lr_stat": -11.003522081437788,
+                "p_value": 0.5,
+                "significant": false,
+                "recommended_family": "poisson"
+            }
+        ],
+        "failures": []
+    }
+}

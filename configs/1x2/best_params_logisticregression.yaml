@@ -1,0 +1,4 @@
+penalty: elasticnet
+C: 0.024351398756960182
+l1_ratio: 0.41360515899399325
+solver: saga

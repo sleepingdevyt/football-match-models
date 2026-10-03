@@ -1,0 +1,12 @@
+params:
+  max_depth: 3
+  min_samples_leaf: 50
+  n_estimators: 1150
+  learning_rate: 0.005014753396902601
+  col_sample: 0.5219971421177583
+model: NGBoost
+family: negbin
+component: away
+metric: nll
+best_value: 2.2443446503707527
+tuning_date: '2026-08-08T13:55:49'

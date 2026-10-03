@@ -1,0 +1,75 @@
+{
+    "target": "goals",
+    "components": [
+        "home_score_90",
+        "away_score_90"
+    ],
+    "thresholds": [
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5
+    ],
+    "total_method": "convolution",
+    "max_k": 8,
+    "saved_at": "2026-08-08T10:13:45",
+    "results": [
+        {
+            "model": "LightGBMLSS",
+            "family": "poisson",
+            "nll_home": 2.4550260801122064,
+            "nll_away": 2.313973036231604,
+            "rps_home": 1.3595423561615154,
+            "rps_away": 1.2887593318808979,
+            "ece_global": 0.007683924926904855
+        },
+        {
+            "model": "XGBoostLSS",
+            "family": "poisson",
+            "nll_home": 2.4578722069456176,
+            "nll_away": 2.3154829320577317,
+            "rps_home": 1.3636159643599433,
+            "rps_away": 1.2902303373928443,
+            "ece_global": 0.00791191674479963
+        },
+        {
+            "model": "NGBoost",
+            "family": "poisson",
+            "nll_home": 2.458583794906423,
+            "nll_away": 2.3130221418558405,
+            "rps_home": 1.3637775410918485,
+            "rps_away": 1.286962720535409,
+            "ece_global": 0.008321952774051709
+        },
+        {
+            "model": "NGBoost",
+            "family": "negbin",
+            "nll_home": 2.4085027251293685,
+            "nll_away": 2.2707924195553755,
+            "rps_home": 1.3478065153869023,
+            "rps_away": 1.2767431058991854,
+            "ece_global": 0.03153712580115954
+        },
+        {
+            "model": "XGBoostLSS",
+            "family": "negbin",
+            "nll_home": 2.576673012902767,
+            "nll_away": 2.380837643045401,
+            "rps_home": 1.6116760384894666,
+            "rps_away": 1.4273428471157252,
+            "ece_global": 0.08127286299074421
+        },
+        {
+            "model": "LightGBMLSS",
+            "family": "negbin",
+            "nll_home": 2.5840691459819634,
+            "nll_away": 2.4354201052911946,
+            "rps_home": 1.6246509284751807,
+            "rps_away": 1.5015639720059797,
+            "ece_global": 0.09878122639123281
+        }
+    ]
+}

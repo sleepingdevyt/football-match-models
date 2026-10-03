@@ -1,0 +1,43 @@
+{
+    "target": "goals",
+    "components": [
+        "home_total_corners",
+        "away_total_corners"
+    ],
+    "thresholds": [
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5
+    ],
+    "total_method": "convolution",
+    "max_k": 15,
+    "saved_at": "2026-08-08T13:55:49",
+    "model": "NGBoost",
+    "family": "negbin",
+    "component": "away",
+    "results": {
+        "best_value": 2.2443446503707527,
+        "metric": "nll",
+        "best_params": {
+            "max_depth": 3,
+            "min_samples_leaf": 50,
+            "n_estimators": 1150,
+            "learning_rate": 0.005014753396902601,
+            "col_sample": 0.5219971421177583
+        },
+        "n_trials": 100,
+        "n_complete": 75,
+        "n_pruned": 25
+    }
+}

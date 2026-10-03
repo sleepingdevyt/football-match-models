@@ -1,0 +1,65 @@
+# ==============================================================================
+#  ESPACIOS DE BUSQUEDA DE OPTUNA - 1X2
+#  Consumido por: src/hypertunning/hypertunning.py :: create_optuna_objective
+#
+#  FORMATO (no anidar bajo "params:"):
+#    - Rangos numericos -> [low, high]      se desempaquetan en suggest_int/float
+#    - Categoricas      -> [opt1, opt2,...] se pasan enteras a suggest_categorical
+#
+#  Las claves deben coincidir EXACTAMENTE con las que lee el objective.
+#  No incluir aqui parametros fijos (objective, num_class, random_state, etc.):
+#  esos los inyecta el codigo.
+# ==============================================================================
+
+XGBoost:
+  n_estimators: [200, 1500]
+  max_depth: [3, 10]
+  learning_rate: [0.005, 0.3]          # log=True
+  min_child_weight: [1, 20]
+  subsample: [0.6, 1.0]
+  colsample_bytree: [0.5, 1.0]
+  colsample_bylevel: [0.5, 1.0]
+  colsample_bynode: [0.5, 1.0]
+  gamma: [1.0e-8, 5.0]                 # log=True
+  reg_alpha: [1.0e-8, 10.0]            # log=True
+  reg_lambda: [1.0e-8, 20.0]           # log=True
+  max_delta_step: [0, 10]
+  max_bin: [128, 512]
+  grow_policy: ["depthwise", "lossguide"]
+
+LightGBM:
+  n_estimators: [200, 1500]
+  learning_rate: [0.005, 0.3]          # log=True
+  num_leaves: [15, 255]
+  max_depth: [3, 12]
+  min_child_samples: [5, 100]
+  subsample: [0.6, 1.0]
+  colsample_bytree: [0.5, 1.0]
+  feature_fraction_bynode: [0.5, 1.0]
+  reg_alpha: [1.0e-8, 10.0]            # log=True
+  reg_lambda: [1.0e-8, 20.0]           # log=True
+  min_split_gain: [1.0e-8, 1.0]        # log=True
+  path_smooth: [0.0, 10.0]
+  max_bin: [128, 512]
+  extra_trees: [true, false]
+
+CatBoost:
+  iterations: [200, 1500]
+  depth: [4, 10]
+  learning_rate: [0.005, 0.3]          # log=True
+  l2_leaf_reg: [1.0, 30.0]             # log=True
+  random_strength: [1.0e-8, 10.0]      # log=True
+  bagging_temperature: [0.0, 5.0]
+  border_count: [64, 254]
+  leaf_estimation_iterations: [1, 10]
+  min_data_in_leaf: [1, 100]
+  grow_policy: ["SymmetricTree", "Depthwise", "Lossguide"]
+
+ExtraTrees:
+  n_estimators: [200, 1200]
+  max_depth: [5, 30]
+  min_samples_split: [2, 30]
+  min_samples_leaf: [1, 20]
+  max_features: ["sqrt", "log2", 0.5, 0.8]
+  bootstrap: [true, false]
+  max_samples: [0.5, 1.0]              # solo se usa si bootstrap=true

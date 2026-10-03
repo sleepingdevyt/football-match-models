@@ -1,0 +1,43 @@
+{
+    "target": "goals",
+    "components": [
+        "home_total_corners",
+        "away_total_corners"
+    ],
+    "thresholds": [
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5
+    ],
+    "total_method": "convolution",
+    "max_k": 15,
+    "saved_at": "2026-08-08T10:47:42",
+    "model": "NGBoost",
+    "family": "poisson",
+    "component": "home",
+    "results": {
+        "best_value": 2.4352508471339576,
+        "metric": "nll",
+        "best_params": {
+            "max_depth": 2,
+            "min_samples_leaf": 48,
+            "n_estimators": 1300,
+            "learning_rate": 0.005027051967689165,
+            "col_sample": 0.506177349810166
+        },
+        "n_trials": 100,
+        "n_complete": 99,
+        "n_pruned": 1
+    }
+}

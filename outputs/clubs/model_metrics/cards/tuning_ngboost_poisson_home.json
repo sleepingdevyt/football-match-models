@@ -1,0 +1,36 @@
+{
+    "target": "cards",
+    "components": [
+        "home_total_cards",
+        "away_total_cards"
+    ],
+    "thresholds": [
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5
+    ],
+    "total_method": "convolution",
+    "max_k": 7,
+    "saved_at": "2026-08-14T14:46:11",
+    "model": "NGBoost",
+    "family": "poisson",
+    "component": "home",
+    "results": {
+        "best_value": 1.6590806845436326,
+        "metric": "nll",
+        "best_params": {
+            "max_depth": 2,
+            "min_samples_leaf": 49,
+            "n_estimators": 1950,
+            "learning_rate": 0.005003882139056356,
+            "col_sample": 0.7451044774412743
+        },
+        "n_trials": 100,
+        "n_complete": 98,
+        "n_pruned": 2
+    }
+}

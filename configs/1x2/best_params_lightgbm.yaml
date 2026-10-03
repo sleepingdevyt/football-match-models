@@ -1,0 +1,14 @@
+n_estimators: 434
+learning_rate: 0.0062732720562188055
+num_leaves: 63
+max_depth: 12
+min_child_samples: 42
+subsample: 0.8177180175366877
+colsample_bytree: 0.8180592848684569
+feature_fraction_bynode: 0.7683900459608057
+reg_alpha: 3.2930963366651257e-07
+reg_lambda: 2.4450419594568896e-08
+min_split_gain: 6.505353607800362e-07
+path_smooth: 5.100160327683401
+max_bin: 439
+extra_trees: true
