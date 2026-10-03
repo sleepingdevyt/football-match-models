@@ -24,7 +24,7 @@ sets of matches, so read them as a scale and not as a ranking:
 | --- | --- |
 | Always pick the home team | 43.5% |
 | One feature written in SQL: points in the previous five matches | 46.7% |
-| The models in this repository, about a thousand features, on their test set | about 54% |
+| The models in this repository on their test set, with the 20 features the selection keeps out of 1,048 candidates | about 54% |
 
 The course also shows what happens when that one SQL feature includes the match it is trying to
 predict: the score jumps to 65.6%, above the real models. That is the leak the audit in
