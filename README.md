@@ -8,6 +8,30 @@
 
 ---
 
+## The video
+
+This is the machine learning project behind the Sleeping Dev video
+**SQL Full Course With a Real ML Project (Football Data)**.
+
+The course teaches SQL on the database this project reads from, and ends by building the kind of table
+these models are trained on: one row per match, with features computed only from earlier matches. The
+models here start where that table ends.
+
+Three numbers from the course put the results of this repository in context. They come from different
+sets of matches, so read them as a scale and not as a ranking:
+
+| Approach | Matches called right |
+| --- | --- |
+| Always pick the home team | 43.5% |
+| One feature written in SQL: points in the previous five matches | 46.7% |
+| The models in this repository, about a thousand features, on their test set | about 54% |
+
+The course also shows what happens when that one SQL feature includes the match it is trying to
+predict: the score jumps to 65.6%, above the real models. That is the leak the audit in
+[Feature selection](#feature-selection--the-core-idea) looks for.
+
+---
+
 ## What this environment does
 
 We model football (soccer) matches in two fundamentally different ways, and the environment is
